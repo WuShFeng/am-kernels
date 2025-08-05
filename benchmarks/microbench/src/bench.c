@@ -74,11 +74,11 @@ static uint32_t score(Benchmark *b, uint64_t usec) {
 }
 
 int main(const char *args) {
-  const char *setting_name = args;
-  if (args == NULL || strcmp(args, "") == 0) {
-    printf("Empty mainargs. Use \"ref\" by default\n");
-    setting_name = "ref";
-  }
+  const char *setting_name = "test";
+  //if (args == NULL || strcmp(args, "") == 0) {
+  //  printf("Empty mainargs. Use \"ref\" by default\n");
+  //  setting_name = "ref";
+  //}
   int setting_id = -1;
 
   if      (strcmp(setting_name, "test" ) == 0) setting_id = 0;
@@ -149,6 +149,10 @@ int main(const char *args) {
   }
   printf("Scored time: %s ms\n", format_time(score_time));
   printf("Total  time: %s ms\n", format_time(total_time));
+
+  if (pass) {
+    printf("Ending message = %s\n", args == NULL ? "(null)" : args);
+  }
   return (pass ? 0 : 1);
 }
 
