@@ -1,15 +1,3 @@
-*
-!*/
-!*.h
-!*.c
-!*.cc
-!*.S
-!Makefile
-!README
-!README.md
-!LICENSE
-.*
-_*
-*~
 build/
-!.gitignore
+.cache/
+*.txt
