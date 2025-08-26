@@ -1,0 +1,11 @@
+[    matrix-mul] [1;32mPASS[0m
+[         crc32] [1;32mPASS[0m
+[   select-sort] [1;32mPASS[0m
+[           div] [1;32mPASS[0m
+[         prime] [1;32mPASS[0m
+[           max] [1;32mPASS[0m
+[      goldbach] [1;32mPASS[0m
+[    load-store] [1;32mPASS[0m
+[        pascal] [1;32mPASS[0m
+[        string] [1;32mPASS[0m
+[       if-else] [1;32mPASS[0m
