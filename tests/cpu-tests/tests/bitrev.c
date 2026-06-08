@@ -23,7 +23,7 @@ static uint8_t spi_bitrev(uint8_t data) {
   SPI_TX0 = data << 8 | 0xff;
   SPI_DIV = 0;
   SPI_SS = SS_BITREV;
-  SPI_CTRL = CTRL_ASS | 15;
+  SPI_CTRL = CTRL_ASS | 16;
   SPI_CTRL |= CTRL_GO;
   while (SPI_CTRL & CTRL_GO)
     ;
